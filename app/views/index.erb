@@ -1,23 +1,14 @@
 <div class="container">
-  <h1>Welcome to Sinatra!</h1>
-  <p>Hello, world!</p>
-
-  <table>
-    <tr>
-      <th>File Description</th>
-      <th>File Location</th>
-    </tr>
-    <tr>
-      <td>This view file</td>
-      <td><code><%= __FILE__.gsub(Sinatra::Application.root, '') %></code></td>
-    </tr>
-    <tr>
-      <td>The layout file</td>
-      <td><code><%= File.expand_path('../layout.erb', __FILE__).gsub(Sinatra::Application.root, '') %></code></td>
-    </tr>
-    <tr>
-      <td>The current controller</td>
-      <td><code><%= File.expand_path('../../controllers/index.rb', __FILE__).gsub(Sinatra::Application.root, '') %></code></td>
-    </tr>
-  </table>
+<form name="twitter_username  " action="/usernames/new" method="POST">
+Twitter Username: <input type="text" name="twitter_user">
+<input type="submit" value="Submit">
+</form>
+</div>
+<div class="container">
+  <form name="twitter_search" action="/search/new" method="get">
+<p> Twitter HashTag(include hash): <input type="text" name ="hash_tag"/></p>
+<p> Language: <input type="text" name="language"/></p>
+<p>Number of tweets <input type="text" name="number"></p>
+<p> <input type="submit" value="search"/></p>
+</form>
 </div>

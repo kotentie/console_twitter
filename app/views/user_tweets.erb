@@ -1,0 +1,10 @@
+
+<div class="container">
+
+<% @tweets.each do |tweet| %>
+  <p> <%= tweet.content %> </p>
+  <p> <%= tweet.tweet_time %> </p>
+  <img src="<%= tweet.image %>" >
+<% end %>
+
+</div>

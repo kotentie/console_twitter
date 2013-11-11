@@ -1,0 +1,9 @@
+<div class="container">
+  <% @tweets.each do |tweet| %>
+     <p>
+     <img src="<%=tweet.profile_image_url %>"/>
+    <%= tweet.text %>
+    <p>
+    <br>
+  <% end %>
+</div>
