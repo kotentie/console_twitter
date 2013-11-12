@@ -1,0 +1,14 @@
+<div class="partial">
+<img src="http://sierrafire.cr.usgs.gov/images/loading.gif"/>
+
+<div class="tweet_info" id='slow_load' style="display:none" >
+<% @tweets.each do |tweet| %>
+  <p> <%= tweet.content %> </p>
+  <p> <%= tweet.tweet_time %> </p>
+  <img src="<%= tweet.image %>" >
+<% end %>
+</div>
+
+</div>
+</div>
+

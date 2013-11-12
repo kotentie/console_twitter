@@ -12,6 +12,7 @@ require 'twitter'
 require 'uri'
 require 'pathname'
 require 'debugger'
+require 'oauth'
 
 
 require 'pg'
@@ -39,9 +40,6 @@ require APP_ROOT.join('config', 'database')
 #Give twitter stuff
 
 Twitter.configure do |config|
-  config.consumer_key = 'RCsaeaO3S0aDqaFuCQKLg'
-  config.consumer_secret = 'c9926wlO5cLPhj6uSNttcUlJu07wIs3Zvg8dm80'
-  config.oauth_token = ENV["TOKEN"]
-  config.oauth_token_secret = ENV["SECRET"]
+
 end
 

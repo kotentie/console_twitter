@@ -8,7 +8,14 @@ Twitter Username: <input type="text" name="twitter_user">
   <form name="twitter_search" action="/search/new" method="get">
 <p> Twitter HashTag(include hash): <input type="text" name ="hash_tag"/></p>
 <p> Language: <input type="text" name="language"/></p>
-<p>Number of tweets <input type="text" name="number"></p>
+<p>Number of tweets: <input type="text" name="number"></p>
 <p> <input type="submit" value="search"/></p>
+</form>
+</div>
+<div class="container">
+  <form name="twitter_update" action="/tweets/new" method="Post">
+<p>Tweet this: <input type="text" name="tweet"></p>
+<p>From Account: <input type="text" name="twitter_user"> </p>
+<p> <input type="submit" value="Tweet things"/></p>
 </form>
 </div>
